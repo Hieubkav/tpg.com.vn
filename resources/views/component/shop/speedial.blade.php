@@ -1,6 +1,4 @@
-@php
-    $setting = \App\Models\Setting::first();
-@endphp
+
 
 <head>
     <style>
@@ -36,20 +34,20 @@
 <section class="relative">
     <div class="fixed bottom-8 right-8 z-20 flex flex-col items-center space-y-2">
         <!-- Phone -->
-        <a href="tel:{{ $setting->hotline }}"
+        <a href="tel:0123456789"
            class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-md transform transition duration-300 hover:scale-110 hover:shadow-lg hover:rotate-3 animate-shake">
             <i class="fas fa-phone text-xl speedial-icon md:text-2xl"></i>
         </a>
 
         <!-- Messenger -->
-        <a href="{{ $setting->messenger }}"
+        <a href="https://m.me/yourpage"
            class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-md transform transition duration-300 hover:scale-110 hover:shadow-lg hover:rotate-3 animate-shake"
            target="_blank">
             <i class="fab fa-facebook-messenger speedial-icon text-xl md:text-2xl"></i>
         </a>
 
         <!-- Zalo -->
-        <a href="https://zalo.me/{{ $setting->zalo }}"
+        <a href="https://zalo.me/yourzalo"
            class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-md transform transition duration-300 hover:scale-110 hover:shadow-lg hover:rotate-3 animate-shake"
            target="_blank">
             <span class="speedial-icon">Zalo</span>

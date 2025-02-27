@@ -54,15 +54,4 @@ class User extends Authenticatable implements FilamentUser
         'password' => 'hashed',
     ];
 
-    public function services(){
-        return $this->hasMany(Service::class);
-    }
-
-    public function posts(){
-        return $this->hasMany(Post::class);
-    }
-
-    public function pages(){
-        return $this->hasMany(Page::class);
-    }
 }
