@@ -11,28 +11,18 @@ class MainController extends Controller
         return view('shop.storeFront');
     }
 
-    public function page($id)
+    public function about()
     {
-        return view('shop.page', ['id' => $id]);
+        return view('shop.about');
     }
 
-    public function post($id)
+    public function contact()
     {
-        return view('shop.post', ['id' => $id]);
+        return view('shop.contact');
     }
 
-    public function catPost($id)
+    public function services()
     {
-        return view('shop.catPost', ['id' => $id]);
-    }
-
-    public function hiring()
-    {
-        return view('shop.hiring');
-    }
-
-    public function services($id)
-    {
-        return view('shop.services', ['id' => $id]);
+        return view('shop.service');
     }
 }
